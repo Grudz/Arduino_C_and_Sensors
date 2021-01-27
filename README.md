@@ -11,7 +11,7 @@ This repository explains how to establish a connection between Unreal Engine 4 a
 
 # 1. Environment
 
-If possible, use ROS Melodic with Ubuntu 18.04 on one laptop and Unreal Engine 4.23 on another laptop that's running Windows. These laptops need to be connected to eachother via ethernet. If you are using a different version of ROS or Unreal Engine, that's not a deal breaker, but you may run into some issues. However, I will make note on where those issues might be and how to get around them.
+If possible, use ROS Melodic with Ubuntu 18.04 on one laptop and Unreal Engine 4.23 on another laptop that's running Windows. These laptops need to be connected to eachother via ethernet cable. If you are using a different version of ROS or Unreal Engine, that's not a deal breaker, but you may run into some issues. However, I will make note on where those issues might be and how to get around them.
 
 # 2. Directories
 
@@ -24,6 +24,18 @@ The directories includes various Unreal actors which publish as sensor topics to
     - JointPublisher.xxx This actor publishes joint information of the parent actor. Currently is only looking at wheel locations of a wheeled actor to get the wheel position. Can readily be modified to whatever the parent actor is.
     - LiDAR.xxx Simulates a LiDAR by performing a line trace from the root out to the defined world coordinate. There will be multiple LiDAR models available by selecting in the sensor dropdown.
     - StereoCamera.xxx Simulates a stereo camera by publishing two image topics. No disparity or depth yet... hopefully soon.
+
+# 3. Establish Communication via ROSBridge 
+
+We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
+
++ **Step 1, Create a ROS Workspace**: Do this on your Ubuntu laptop
+    - This is easy and doesn't require much more explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) file.
+
+```
+$ npm install -g bash-handbook
+```
+    
 
 https://github.com/code-iai/ROSIntegration
 
