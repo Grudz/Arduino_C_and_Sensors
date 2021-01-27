@@ -39,7 +39,7 @@ $ roscd
 $ cd .. && cd src
 ```
   
-    - Additionally, the first line in the script must indicate which program it should use to run the file, like so:
+   - Additionally, the first line in the script must indicate which program it should use to run the file, like so:
 
 ```bash
 #!/bin/bash
