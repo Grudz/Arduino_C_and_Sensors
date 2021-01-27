@@ -35,10 +35,10 @@ We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai
 + **Step 2: Configure your Ubuntu Machine**
     - Open a new terminal and navigate to the "src" folder of your ROS workspace. Download the ROSBridge GitHub repository and compile it from source.
 ```
-$ roscd
-$ cd .. && cd src
-$ git clone -b 0.11.10 https://github.com/RobotWebTools/rosbridge_suite.git
-$ cd .. && catkin_make
+roscd
+cd .. && cd src
+git clone -b 0.11.10 https://github.com/RobotWebTools/rosbridge_suite.git
+cd .. && catkin_make
 ```
  + **Step 2: Install**
     - Still on your Ubuntu laptop, open a new terminal and navigate to the "src" folder of your ROS workspace. Download the ROSBridge GitHub repository and compile it from source. 
