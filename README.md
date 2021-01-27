@@ -25,14 +25,14 @@ The directories includes various Unreal actors which publish as sensor topics to
     - LiDAR.xxx Simulates a LiDAR by performing a line trace from the root out to the defined world coordinate. There will be multiple LiDAR models available by selecting in the sensor dropdown.
     - StereoCamera.xxx Simulates a stereo camera by publishing two image topics. No disparity or depth yet... hopefully soon.
 
-# 3. Install Dependencies
+# 3. Configure your ROS/Ubuntu Laptop
 
 We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
 
-+ **Step 1: Create a ROS Workspace**
-    - Do this on your Ubuntu laptop. This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc file.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) 
++ **Step 1: Create a ROS workspace**
+    - This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc file.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) 
     
-+ **Step 2: Configure your Ubuntu Machine**
++ **Step 2: Install Dependencies**
     - Open a new terminal and navigate to the "src" folder of your ROS workspace. Download the ROSBridge GitHub repository and compile it from source.
 ```
 roscd
@@ -40,9 +40,13 @@ cd .. && cd src
 git clone -b 0.11.10 https://github.com/RobotWebTools/rosbridge_suite.git
 cd .. && catkin_make
 ```
- + **Step 2: Install**
-    - Still on your Ubuntu laptop, open a new terminal and navigate to the "src" folder of your ROS workspace. Download the ROSBridge GitHub repository and compile it from source. 
+ + **Step 3: Sanity Check**
+    - Verify you installed ROSBridge correctly by running the following command. The output should be the version of ROSBridge you installed, which is 11.10.
+```
+roscat rosbridge_server package.xml | grep '<version>'
+```
+# 3. Configure your ROS/Ubuntu Laptop
 
-Or if you prefer to use `sh` instead of `bash`, change `#!/bin/bash` to `#!/bin/sh`. This `#!`
+We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
 
 
