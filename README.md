@@ -3,7 +3,7 @@ I programmed basic functionality for basically every sensor in the Ardunio start
 
 # Perception Simulation: Setup ROSBridge and Add Sensors with UE4
 
-### Contact
+**Contact:**
 *Sam Kysar, skysar@prattmiller.com*
 
 *Ben Grudzien, bgrudzien@prattmiller.com*
