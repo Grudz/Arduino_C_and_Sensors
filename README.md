@@ -3,4 +3,5 @@ I programmed basic functionality for basically every sensor in the Ardunio start
 
 # Perception Simulation
 *Sam Kysar, skysar@prattmiller.com*
+
 *Ben Grudzien, bgrudzien@prattmiller.com*
