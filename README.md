@@ -11,7 +11,7 @@ This repository explains how to establish a connection between Unreal Engine 4 a
 
 # 1. Overview
 
-This repoistory was tested using ROS Melodic with Ubuntu 18.04 on one laptop and Unreal Engine 4.32 on another laptop in a Windows environment. These laptops need to be connected to eachother via ethernet.
+This repoistory was tested using ROS Melodic with Ubuntu 18.04 on one laptop and Unreal Engine 4.23 on another laptop in a Windows environment. These laptops need to be connected to eachother via ethernet.
 
 # 2. Directories
 + [meshes](./meshes/.): Various meshes.
