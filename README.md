@@ -1,9 +1,9 @@
 # Arduino C - Sensors
 I programmed basic functionality for basically every sensor in the Ardunio starter kit. Everything here is written in C.
 
-# Perception Simulation: ROSBridge and Sensors with Unreal Engine
+# Perception Simulation: Connect ROS with Unreal Engine 
 
-This repository explains how to establish a connection between Unreal Engine 4 and ROS. It also contains instructions on how to add sensors into your simulation.
+This repository explains how to establish a communication between Unreal Engine and ROS. It also contains instructions on how to add sensors into your simulations.
 
 **Contact:** *Sam Kysar, skysar@prattmiller.com,* *Ben Grudzien, bgrudzien@prattmiller.com*
 
@@ -30,16 +30,23 @@ The directories includes various Unreal actors which publish as sensor topics to
 We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
 
 + **Step 1: Create a ROS Workspace**
-    - Do this on your Ubuntu laptop. This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) file.
+    - Do this on your Ubuntu laptop. This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc file.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) 
     
 + **Step 2: Install**
-    - Still on your Ubuntu laptop, open a new terminal and run these commands.
- 
+    - Still on your Ubuntu laptop, open a new terminal and navigate to the "src" folder of your ROS workspace.
+```
+$ roscd
+$ cd .. && cd src
+```
+  
+    - Additionally, the first line in the script must indicate which program it should use to run the file, like so:
 
+```bash
+#!/bin/bash
+echo "Hello, world!"
 ```
-$ npm install -g bash-handbook
-```
-    
+
+Or if you prefer to use `sh` instead of `bash`, change `#!/bin/bash` to `#!/bin/sh`. This `#!` character sequence is known as the [shebang](http://en.wikipedia.org/wiki/Shebang_%28Unix%29). Now you can run the script like this:    
 
 https://github.com/code-iai/ROSIntegration
 
