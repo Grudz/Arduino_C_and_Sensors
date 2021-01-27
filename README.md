@@ -27,7 +27,7 @@ The directories includes various Unreal actors which publish as sensor topics to
 
 # 3. Configure your ROS/Ubuntu Laptop
 
-We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
+We refered to the [ROSIntegration GitHub](https://github.com/code-iai/ROSIntegration) to set this up. However, we will ignore some of their instructions and set it up our own way.
 
 + **Step 1: Create a ROS workspace**
     - This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc file.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) 
@@ -45,7 +45,14 @@ cd .. && catkin_make
 ```
 roscat rosbridge_server package.xml | grep '<version>'
 ```
-# 3. Configure your ROS/Ubuntu Laptop
+
+ + **Step 4: Find your IP Address**
+    - We are using a hard wired ethernet connection. The correct IP address will be under the "eno" or "enx" category. It's an ipv4 address and you'll find it after the word "inet"
+```
+ip a
+```
+
+# 3. Configure your Unreal Engine/Windows Laptop
 
 We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
 
