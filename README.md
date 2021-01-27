@@ -25,12 +25,16 @@ The directories includes various Unreal actors which publish as sensor topics to
     - LiDAR.xxx Simulates a LiDAR by performing a line trace from the root out to the defined world coordinate. There will be multiple LiDAR models available by selecting in the sensor dropdown.
     - StereoCamera.xxx Simulates a stereo camera by publishing two image topics. No disparity or depth yet... hopefully soon.
 
-# 3. Establish Communication via ROSBridge 
+# 3. Install Dependencies
 
 We are going to refer to the [ROSIntegration Plugin](https://github.com/code-iai/ROSIntegration) to set this up. However, lets ignore some of their instructions and set it up our own way.
 
-+ **Step 1, Create a ROS Workspace**: Do this on your Ubuntu laptop
-    - This is easy and doesn't require much more explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) file.
++ **Step 1: Create a ROS Workspace**
+    - Do this on your Ubuntu laptop. This is easy and doesn't require much explanation. Just make sure after you set up your [ROS workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace), you source it in your [.bashrc](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) file.
+    
++ **Step 2: Install**
+    - Still on your Ubuntu laptop, open a new terminal and run these commands.
+ 
 
 ```
 $ npm install -g bash-handbook
